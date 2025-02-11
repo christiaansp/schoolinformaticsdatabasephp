@@ -1,0 +1,109 @@
+body {
+    font-family: 'Lucida Grande', Arial, sans-serif;
+    background-color: #ffffff;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background: linear-gradient(to bottom, #c0c0c0, #a0a0a0);
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 5px 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.product-detail {
+    max-width: 800px;
+    margin: 100px auto;
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-header {
+    margin-bottom: 20px;
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-info {
+    font-size: 16px;
+    color: #333;
+}
+
+.product-buttons {
+    margin-top: 20px;
+}
+
+.product-buttons button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.product-buttons button:hover {
+    background-color: #45a049;
+}
+
+.product-footer {
+    margin-top: 20px;
+}
+
+.product-footer .link {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 5px;
+}
+
+.product-footer .link:hover {
+    text-decoration: underline;
+}
+
+.not-found {
+    position: fixed;
+    top: 50px; 
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.not-found img {
+    width: 200px;
+    height: auto; 
+}
+

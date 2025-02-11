@@ -1,0 +1,88 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Lucida Grande', Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+.navbar {
+    background: linear-gradient(to bottom, #c0c0c0, #a0a0a0);
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 5px 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Push content down to accommodate fixed navbar */
+.content {
+    padding-top: 50px;
+}
+
+/* Tab Content */
+.tabcontent {
+    display: none;
+    padding: 60px 20px;
+    height: 100%;
+    text-align: center;
+}
+.tabcontent img {
+    max-width: 100%;
+}
+
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.product-box {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 350px; 
+}
+.product-box a {
+    color: black; 
+    text-decoration: none; 
+}
+
+.product-box img {
+    max-width: 100%;
+    height: 250px; 
+    object-fit: cover; 
+}
+
+
+.product-box h4, .product-box p {
+    margin: 0;
+    padding-top: 10px;
+    flex-grow: 1;
+}
+
+#Home {
+    color: black;
+}
+
