@@ -1,3 +1,5 @@
+
+/* Font and background*/
 body, html {
     height: 100%;
     margin: 0;
@@ -5,6 +7,12 @@ body, html {
     background-color: #ffffff;
 }
 
+/*
+###################################
+######### NAVBAR START ############
+###################################
+
+*/
 .navbar {
     background: linear-gradient(to bottom, #c0c0c0, #a0a0a0);
     padding: 10px 0;
@@ -16,7 +24,28 @@ body, html {
     top: 0;
     left: 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
 }
+
+.content {
+    padding-top: 50px;
+}
+
+/* Navbar naar onderkant van site op telefoons voor betere houding*/
+@media screen and (max-width: 768px) {
+    .navbar {
+        top: auto;
+        bottom: 0;
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .content {
+        padding-top: 0; 
+        padding-bottom: 50px;
+    }
+}
+
+
 .navbar a {
     color: white;
     text-decoration: none;
@@ -29,12 +58,17 @@ body, html {
     background-color: rgba(255, 255, 255, 0.4);
 }
 
-/* Push content down to accommodate fixed navbar */
 .content {
     padding-top: 50px;
 }
 
-/* Tab Content */
+/*
+###################################
+######### NAVBAR END ##############
+###################################
+
+*/
+
 .tabcontent {
     display: none;
     padding: 60px 20px;
@@ -45,6 +79,13 @@ body, html {
     max-width: 100%;
 }
 
+
+/*
+###################################
+######### STORE GRID ##############
+###################################
+
+*/
 
 .product-grid {
     display: flex;
@@ -82,7 +123,11 @@ body, html {
     flex-grow: 1;
 }
 
-#Home {
-    color: black;
-}
+/*
+###################################
+####### STORE GRID END  ###########
+###################################
+
+*/
+
 
