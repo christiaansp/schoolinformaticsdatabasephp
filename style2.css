@@ -6,6 +6,13 @@ body {
     box-sizing: border-box;
 }
 
+/*
+###################################
+######### NAVBAR START  ###########
+###################################
+
+*/
+
 .navbar {
     background: linear-gradient(to bottom, #c0c0c0, #a0a0a0);
     padding: 10px 0;
@@ -17,6 +24,25 @@ body {
     top: 0;
     left: 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.content {
+    padding-top: 50px;
+}
+
+/* Navbar naar onderkant van site op telefoons voor betere houding*/
+@media screen and (max-width: 768px) {
+    .navbar {
+        top: auto;
+        bottom: 0;
+        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .content {
+        padding-top: 0; 
+        padding-bottom: 50px;
+    }
 }
 
 .navbar a {
@@ -31,6 +57,21 @@ body {
 .navbar a:hover {
     background-color: rgba(255, 255, 255, 0.4);
 }
+
+/*
+###################################
+######### NAVBAR END ##############
+###################################
+
+*/
+
+/*
+###################################
+############ PRODUCT ##############
+###################################
+
+*/
+
 
 .product-detail {
     max-width: 800px;
@@ -91,6 +132,21 @@ body {
     text-decoration: underline;
 }
 
+/*
+###################################
+######## PRODUCT END ##############
+###################################
+
+*/
+
+
+/*
+###################################
+############## 404 ################
+###################################
+
+*/
+
 .not-found {
     position: fixed;
     top: 50px; 
@@ -106,4 +162,5 @@ body {
     width: 200px;
     height: auto; 
 }
+
 
