@@ -1,4 +1,5 @@
 <?php
+# database setup
 $servername = "localhost";
 $username = "root";
 $password = "root";
@@ -26,7 +27,7 @@ if ($result->num_rows > 0) {
 
 $conn->close();
 ?>
-
+<!-- HTML:5 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,12 +38,18 @@ $conn->close();
 </head>
 <body>
 
+<!-- #######Navbar############# -->
 <div class="navbar">
     <a href="home.php#Home" class="tablink">Home</a>
     <a href="home.php#Store" class="tablink">Store</a>
     <a href="home.php#Contact" class="tablink">Contact</a>
     <a href="home.php#About" class="tablink">About</a>
 </div>
+
+
+
+
+<!-- #######Normale Site############# -->
 
 <?php if ($product_found): ?>
     <!-- als product gevonden kan worden krijgen ze de normale site. -->
@@ -57,11 +64,18 @@ $conn->close();
             <p><?php echo "€" . ($product["prijs"] ?? "Price not found."); ?></p>
 
             <div class="product-buttons">
+            <p></p>
                 <button class="buy-now">Buy Now</button>
+                <p>(buying feature not coming soon)</p>
             </div>
         </div>
     </div>
 
+
+
+
+
+<!-- #######404############# -->
 <?php else: ?>
     <!-- 404 als niet gevonden kan worden -->
     <div class="not-found">
